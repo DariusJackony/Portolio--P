@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Delius&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Jackony's Portfolio</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Jackony</div>
+        <div class="right-side" id="right-side">
+        <div class="nav-links">
+            <a href="#home-section">HOME</a>
+            <a href="#about-section">ABOUT</a>
+            <a href="#skills-section">SKILLS</a>
+            <a href="#projects-section">PROJECTS</a>
+            <a href="#contact-section">CONTACT</a>
+        </div>
+        <div class="github-logo">
+            <a href="https://github.com/DariusJackony" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo" width="30" height="30">
+            </a>
+        </div>
+        </div>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+
+    <section id="home-section">
+        <canvas id="bonds-canvas"></canvas>
+        <h1 class="step">Step into my Universe!</h1>
+        <p>Hi, I'm Jackony! A passionate web developer and cybersecurity enthusiast.<br><br> I love building clean, responsive, and interactive websites while diving into the world of ethical hacking.</p>
+        <p style="margin-top: 20px; font-size: 20px; font-family: Codystar, sans-serif;">Take a look Around.</p>
+    </section>
+
+    <section id="about-section">
+        <div class="abt-heads">
+            <h2 class="abt-header1">ABOUT ME</h2>
+            <p class="abt-header2">Code is my language, curiosity is my fuel—welcome to my world</p>
+        </div>
+        <div class="about-section2">
+            <div id="pic1">
+                <img src="d-a-r-i-u-s.jpeg" alt="Darius Jackony">
+            </div>
+            <div class="about-me-info">
+                <p>
+                    As a self-taught frontend web developer, I thrive on solving problems through code.  
+                    My journey began with HTML and CSS, and now I'm diving deep into JavaScript.  
+                    I enjoy building interactive websites that enhance user experience. <br><br> 
+                    Currently, I'm also exploring cybersecurity and ethical hacking concepts.  
+                    Networking is another area I’m keen on mastering alongside penetration testing.  
+                    My goal is to create secure, efficient, and innovative digital solutions.  
+                    Every day, I push my limits to grow as a developer and security enthusiast.
+                </p>
+                <button class="lets-btn" onclick="scrollNext()">Let’s Collaborate</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-section">
+        <div class="skills-heads">
+            <h2 class="skills-head1">SKILLS</h2>
+            <p>Explore My Expertise</p>
+        </div>
+        <div class="background-skill">
+            <div class="each-skill-info">
+                <div class="each">
+                    <img src="html.png" alt="HTML">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="each">
+                    <img src="css.png" alt="CSS">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="each">
+                    <img src="js.png" alt="JavaScript">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 50%;"></div>
+                    </div>
+                </div>
+                <div class="each">
+                    <img src="React.png" alt="React">
+                    <div class="progress-container">
+                        <div class="progress-bar" style="width: 30%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects-section">
+        <div class="project-heads">
+            <h1 class="projects-head1">PROJECTS</h1>
+            <p>Check Out What I’ve Been Working On</p>
+        </div>
+        <div class="collection-pjts">
+            <div class="projects-each">
+                <div class="projectts-section">
+                    <img src="seen.jpg" alt="Password Generator">
+                    <h1>Password Generator</h1>
+                    <p>A tool to create secure, random passwords for enhanced security.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/DariusJackony/password-generator" target="_blank" class="btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="djackony-password-generator.vercel.app" target="_blank" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="projectts-section">
+                    <img src="seen.jpg" alt="Project 2">
+                    <h1>Project 2</h1>
+                    <p>A brief description of the project. Explains what it does and its purpose.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/DariusJackony/project2" target="_blank" class="btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://yourliveproject.com" target="_blank" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+                <div class="projectts-section">
+                    <img src="seen.jpg" alt="Project 3">
+                    <h1>Project 3</h1>
+                    <p>A brief description of the project. Explains what it does and its purpose.</p>
+                    <div class="project-links">
+                        <a href="https://github.com/DariusJackony/project3" target="_blank" class="btn">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                        <a href="https://yourliveproject.com" target="_blank" class="btn">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <h1>CONTACT ME</h1>
+        <div class="contact-section1">
+            <div class="contact-info">
+                <div class="contact-social">
+                    <h2 class="lets-make">Let's<br>make it happen</h2>
+                    <ul class="social-icons">
+                        <li><a href="https://www.linkedin.com/in/darius-jackony-93a04a250/" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i><span>LinkedIn</span></a></li>
+                        <li><a href="https://x.com/@0day_da" target="_blank" aria-label="X">
+                            <i class="fab fa-x-twitter"></i><span>Twitter (X)</span></a></li>
+                        <li><a href="https://www.instagram.com/dariusjackony" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i><span>Instagram</span></a></li>
+                        <li><a href="https://github.com/DariusJackony" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i><span>GitHub</span></a></li>
+                        <li><a href="https://www.tiktok.com/@DariusJackony" target="_blank" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i><span>TikTok</span></a></li>
+                        <li><a href="https://wa.me/+256760064515" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i><span>WhatsApp</span></a></li>
+                        <li><a href="mailto:your-email@example.com" target="_blank" aria-label="Email">
+                            <i class="fas fa-envelope"></i><span>Email</span></a></li>
+                    </ul>
+                </div>
+                <div class="contact-us-info">
+                    <h1>Message me</h1>
+                    <p>Feel free to reach out!</p>
+                    <form action="https://formspree.io/f/meoavbrj"
+                        method="POST">
+                        <input type="text" placeholder="Enter your name" required><br>
+                        <input type="email" placeholder="Enter your Email" required><br>
+                        <textarea id="message" placeholder="Enter your message" required></textarea><br>
+                        <button class="sub-btn" type="submit">SUBMIT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style="height: 1px; background-color: rgb(131, 131, 131); border: none;">
+    <footer id="footer-sec">
+        <p>© <span id="year"></span> Darius Jackony. All Rights Reserved.</p>
+        <button class="back-to-top" aria-label="Back to Top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="smooth.js"></script>
+    <script src="footer.js"></script>
+</body>
+</html>
