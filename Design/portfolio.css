@@ -481,58 +481,28 @@ body {
     background: rgba(255, 255, 255, 0.3);
     transform: translateY(-50%) scale(1.1); /* Slight zoom on hover */
 }
-.hamburger {
-    display: none;
-    font-size: 28px;
-    cursor: pointer;
-    color: white; /* Adjust to your theme */
-}
+
 .nav-links{
-    margin-right: 20px;
+    margin-left: 480px;
 }
-
-/* Media Queries */
-
-/* Tablets and smaller (≤768px) */
-@media (max-width: 768px) {
+/* Responsive Media Queries */
+@media (max-width: 1104px) {
     .navbar {
-        padding: 10px 15px;
-    }
-
-    .hamburger {
-        display: block;
-    }
-
-    .right-side {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 250px;
-        background: rgba(0, 0, 0, 0.85);
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-        z-index: 999;
-    }
-
-    .right-side.active {
-        display: flex;
+        gap: 8px;
     }
 
     .nav-links {
-        flex-direction: column;
-        width: 100%;
-        margin-right: 0;
+        margin-left: 100px;
+        display: flex;
+        gap: 10px;
     }
 
     .nav-links a {
-        padding: 10px 15px;
-        font-size: 1em;
-        width: 100%;
-        text-align: left;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        font-size: 16px;
+    }
+
+    .nav-links a:hover {
+        background: rgba(255, 255, 255, 0.1);
     }
 
     .nav-links a:last-child {
@@ -540,22 +510,26 @@ body {
     }
 
     .github-logo {
-        margin-top: 10px;
-        padding: 10px 15px;
+        padding: 8px 12px;
     }
 
     .github-logo img {
-        width: 28px;
-        height: 28px;
+        width: 26px;
+        height: 26px;
+    }
+
+    #home-section {
+        padding: 60px 10px;
     }
 
     .step {
-        font-size: 1.8em;
+        font-size: 1.7em;
     }
 
     #home-section p {
-        font-size: 1em;
-        max-width: 90%;
+        font-size: 1.1em;
+        max-width: 95%;
+        margin-top: 15px;
     }
 
     .about-section2 {
@@ -564,7 +538,7 @@ body {
     }
 
     #pic1 img {
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .about-me-info {
@@ -577,7 +551,7 @@ body {
     }
 
     .each-skill-info {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     }
 
     .projects-each {
@@ -585,7 +559,8 @@ body {
     }
 
     .projectts-section img {
-        max-width: 200px;
+        width: 100%;
+        max-height: 180px;
     }
 
     .contact-info {
@@ -593,12 +568,8 @@ body {
         text-align: center;
     }
 
-    .contact-social {
-        text-align: center;
-    }
-
     .lets-make {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
 
     .contact-us-info {
@@ -612,174 +583,103 @@ body {
     }
 
     .back-to-top {
-        right: 15px;
-        width: 35px;
-        height: 35px;
-        font-size: 16px;
+        right: 10px;
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
     }
 }
 
-/* Small phones (≤480px) */
-@media (max-width: 480px) {
+@media (max-width: 991px) {
     .navbar {
-        padding: 8px 12px;
+        gap: 6px;
     }
 
-    .logo {
-        font-size: 1.4em;
-    }
-
-    .hamburger {
-        font-size: 20px;
-    }
-
-    .right-side {
-        width: 200px;
-        padding: 10px;
+    .nav-links {
+        margin-left: 80px;
     }
 
     .nav-links a {
-        font-size: 0.9em;
-        padding: 8px 12px;
+        font-size: 15px;
     }
 
-    .github-logo img {
-        width: 25px;
-        height: 25px;
-    }
-
-    #home-section {
-        padding: 80px 15px;
-    }
-
-    .step {
-        font-size: 1.6em;
-    }
-
-    #home-section p {
-        font-size: 0.9em;
-    }
-
-    #about-section,
-    #skills-section,
-    #projects-section,
-    #contact-section {
-        padding: 40px 15px;
-    }
-
-    .abt-header1,
-    .skills-head1,
-    .projects-head1,
-    #contact-section > h1 {
-        font-size: 1.5em;
-    }
-
-    .abt-header2,
-    .skills-heads p,
-    .project-heads p {
-        font-size: 0.95em;
-    }
-
-    #pic1 img {
-        max-width: 250px;
-    }
-
-    .about-me-info p {
-        font-size: 0.9em;
-    }
-
-    .lets-btn {
-        padding: 8px 15px;
-        font-size: 0.9em;
-    }
-
-    .each img {
-        width: 45px;
-        height: 45px;
-    }
-
-    .projectts-section {
-        padding: 12px;
-    }
-
-    .projectts-section img {
-        max-width: 180px;
-    }
-
-    .projectts-section h1 {
-        font-size: 1.2em;
-    }
-
-    .projectts-section p {
-        font-size: 0.9em;
-    }
-
-    .project-links .btn {
-        padding: 5px 10px;
-        font-size: 0.85em;
-    }
-
-    .lets-make {
-        font-size: 1.5em;
-    }
-
-    .social-icons a {
-        font-size: 1em;
-    }
-
-    .contact-us-info h1 {
-        font-size: 1.3em;
-    }
-
-    .contact-us-info p {
-        font-size: 0.9em;
-    }
-
-    .contact-us-info input,
-    .contact-us-info textarea {
-        padding: 8px;
-        font-size: 0.9em;
-    }
-
-    .sub-btn {
-        padding: 8px 20px;
-        font-size: 0.9em;
-    }
-
-    #footer-sec {
-        padding: 12px;
-        font-size: 0.8em;
-    }
-
-    .back-to-top {
-        width: 30px;
-        height: 30px;
-        font-size: 14px;
-        right: 10px;
-    }
-}
-
-/* Extra-small devices (≤360px) */
-@media (max-width: 360px) {
-    .navbar {
+    .github-logo {
         padding: 6px 10px;
     }
 
-    .logo {
-        font-size: 1.2em;
+    .github-logo img {
+        width: 24px;
+        height: 24px;
     }
 
-    .hamburger {
-        font-size: 18px;
+    #home-section {
+        padding: 50px 8px;
     }
 
-    .right-side {
-        width: 180px;
+    .step {
+        font-size: 1.5em;
+    }
+
+    #home-section p {
+        font-size: 1em;
+        max-width: 100%;
+    }
+
+    #pic1 img {
+        max-width: 300px;
+    }
+
+    .each-skill-info {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .projectts-section img {
+        max-height: 160px;
+    }
+
+    .lets-make {
+        font-size: 1.4em;
+    }
+
+    .back-to-top {
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 947px) {
+    .navbar {
+        position: relative;
+    }
+
+    .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .nav-links.active {
+        left: 0;
     }
 
     .nav-links a {
-        font-size: 0.85em;
-        padding: 7px 10px;
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    .github-logo {
+        padding: 5px 8px;
     }
 
     .github-logo img {
@@ -787,23 +687,55 @@ body {
         height: 22px;
     }
 
+    #home-section {
+        padding: 40px 10px;
+    }
+
     .step {
         font-size: 1.4em;
     }
 
     #home-section p {
-        font-size: 0.85em;
-    }
-
-    .abt-header1,
-    .skills-head1,
-    .projects-head1,
-    #contact-section > h1 {
-        font-size: 1.3em;
+        font-size: 0.95em;
     }
 
     #pic1 img {
-        max-width: 200px;
+        max-width: 280px;
+    }
+
+    .projectts-section img {
+        max-height: 140px;
+    }
+
+    .lets-make {
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 690px) {
+    .nav-links a {
+        font-size: 18px;
+    }
+
+    .github-logo img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #home-section {
+        padding: 30px 8px;
+    }
+
+    .step {
+        font-size: 1.7em;
+    }
+
+    #home-section p {
+        font-size: 1em;
+    }
+
+    #pic1 img {
+        max-width: 400px;
     }
 
     .each-skill-info {
@@ -811,16 +743,65 @@ body {
     }
 
     .projectts-section img {
-        max-width: 160px;
+        max-height: 120px;
     }
 
     .lets-make {
-        font-size: 1.3em;
+        font-size: 1.2em;
+    }
+
+    .back-to-top {
+        right: 5px;
+        width: 28px;
+        height: 28px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    .nav-links a {
+        font-size: 16px;
+    }
+
+    .github-logo img {
+        width: 18px;
+        height: 18px;
+    }
+
+    #home-section {
+        padding: 20px 5px;
+    }
+
+    .step {
+        font-size: 1.2em;
+    }
+
+    #home-section p {
+        font-size: 0.85em;
+    }
+
+    #pic1 img {
+        max-width: 300px;
+    }
+
+    .projectts-section img {
+        max-height: 100px;
+    }
+
+    .lets-make {
+        font-size: 1.1em;
     }
 
     .contact-us-info input,
     .contact-us-info textarea {
-        padding: 7px;
-        font-size: 0.85em;
+        font-size: 14px;
+    }
+
+    .back-to-top {
+        right: 5px;
+        bottom: 10px;
+        width: 25px;
+        height: 25px;
+        font-size: 11px;
     }
 }
