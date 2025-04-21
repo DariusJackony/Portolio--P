@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
     Particle.prototype.draw = function() {
-        ctx.fillStyle = 'white';
+        ctx.fillStyle = 'rgba(100, 100, 100, 0.8)'; // Dim gray particles
         ctx.beginPath();
         ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
         ctx.fill();
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 if (distance < 150) {
                     ctx.beginPath();
-                    ctx.strokeStyle = 'rgba(144, 238, 144, ' + (1 - distance / 150) + ')';
+                    ctx.strokeStyle = 'rgba(50, 100, 50, ' + (1 - distance / 150) + ')'; // Dimmer green bonds
                     ctx.lineWidth = 1;
                     ctx.moveTo(particlesArray[i].x, particlesArray[i].y);
                     ctx.lineTo(particlesArray[j].x, particlesArray[j].y);
