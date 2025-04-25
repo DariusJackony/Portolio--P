@@ -118,9 +118,10 @@ body {
 }
 
 .abt-header1 {
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #fff;
+    
 }
 
 .abt-header2 {
@@ -186,7 +187,7 @@ body {
 }
 
 .skills-head1 {
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: 700;
     color: #fff;
 }
@@ -253,7 +254,7 @@ body {
 }
 
 .projects-head1 {
-    font-size: 2em;
+     font-size: 1.3em;
     font-weight: 700;
     color: #fff;
 }
@@ -332,7 +333,7 @@ body {
 }
 
 #contact-section > h1 {
-    font-size: 2em;
+     font-size: 1.3em;
     font-weight: 700;
     color: #fff;
     margin-bottom: 50px;
@@ -459,10 +460,9 @@ body {
 }
 
 .back-to-top {
-    position: absolute;
+    position: fixed; /* Keeps it fixed on the viewport */
     right: 20px;
-    top: 50%;
-    transform: translateY(-50%); 
+    bottom: 20px; /* Positions it 20px from the bottom */
     background: rgba(255, 255, 255, 0.1);
     color: #fff;
     border: 1px solid #fff;
@@ -479,7 +479,7 @@ body {
 
 .back-to-top:hover {
     background: rgba(255, 255, 255, 0.3);
-    transform: translateY(-50%) scale(1.1); /* Slight zoom on hover */
+    transform: scale(1.1); /* Removed translateY, only scale on hover */
 }
 
 .nav-links{
@@ -716,6 +716,9 @@ body {
     .nav-links a {
         font-size: 18px;
     }
+    .logo {
+        font-size: 19px; 
+       }
 
     .github-logo img {
         width: 22px;
@@ -725,13 +728,18 @@ body {
     #home-section {
         padding: 30px 8px;
     }
-
+     .about-header2{
+        font-size: 1.2em;
+     }
+     .about-me-info p {
+        font-size: 1.1em;
+    }
     .step {
         font-size: 1.7em;
     }
 
     #home-section p {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     #pic1 img {
@@ -754,7 +762,7 @@ body {
         right: 5px;
         width: 28px;
         height: 28px;
-        font-size: 12px;
+        font-size: 20px;
     }
 }
 
@@ -762,6 +770,9 @@ body {
     .nav-links a {
         font-size: 16px;
     }
+    .logo {
+    font-size: 18px; 
+   }
 
     .github-logo img {
         width: 20px;
@@ -771,13 +782,19 @@ body {
     #home-section {
         padding: 20px 5px;
     }
+    .about-header2{
+        font-size: 1.1em ;
+    }
 
+    .about-me-info p {
+        font-size: 1.0em;
+    }
     .step {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
 
     #home-section p {
-        font-size: 0.85em;
+        font-size: 1.0em;
     }
 
     #pic1 img {
@@ -794,7 +811,7 @@ body {
 
     .contact-us-info input,
     .contact-us-info textarea {
-        font-size: 14px;
+        font-size: 1.0em;
     }
 
     .back-to-top {
@@ -802,6 +819,6 @@ body {
         bottom: 10px;
         width: 25px;
         height: 25px;
-        font-size: 11px;
+        font-size: 20px;
     }
 }
