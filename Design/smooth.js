@@ -29,4 +29,9 @@ document.querySelector('.back-to-top').addEventListener('click', () => {
         behavior: 'smooth'
     });
 })
+//Right Click Disable
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+    alert('Right-click is disabled on this website.');
+});
    
